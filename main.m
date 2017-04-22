@@ -1,3 +1,4 @@
+clear
 %questo programma risolverà sistemi di equazioni lineari di 
 %N incognite in N equazioni.
 %L'utente dovrà scegliere se inserire una matrice triangolare
