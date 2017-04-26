@@ -28,6 +28,7 @@ disp('3 - Matrice Quadrata non Triangolare')
 scelta=input('Inserire quindi la scelta: ');
 N=input('inserire ordine matrice A: ');
 [A,b]=InserimentoMatrice(N,scelta);
+fprintf('\n');
 disp('Il sistema di equazioni da risolvere è il seguente:'); 
 visualizzaequazione(N,A,b); %visualizza il sistema di equazioni
 disp('La matrice A dei coefficienti è:');

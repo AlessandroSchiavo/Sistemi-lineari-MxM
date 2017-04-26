@@ -5,14 +5,14 @@ for i=1:N
     end
     for j=2:N
         if A(i,j)>0 %se il numero è maggiore di 0 dovrò inserire il segno '+' solo se ci sono altri numeri prima
-            noncisonozeri='f';
+            noncisonozeri=false;
             for z=j-1:-1:1 %controllo su tutti i primi j-1 termini, se sono tutti 0 non inserisco il segno '+' 
                 if A(i,z)~=0
-                    noncisonozeri='v';
+                    noncisonozeri=true;
                     break
                 end
             end
-            if noncisonozeri=='v' %se almeno uno è diverso da 0 inserisco il segno '+'
+            if noncisonozeri==true %se almeno uno è diverso da 0 inserisco il segno '+'
                 fprintf('+');
                 fprintf('%dx%d',A(i,j), j);
             else
