@@ -26,7 +26,10 @@ disp('1 - Matrice Triangolare Superiore');
 disp('2 - Matrice Triangolare Inferiore');
 disp('3 - Matrice Quadrata non Triangolare')
 scelta=input('Inserire quindi la scelta: ');
-N=input('inserire ordine matrice A: ');
+while scelta<1 || scelta>3
+        scelta=input('Reinserire la scelta: ');
+end
+N=input('Inserire ordine matrice A: ');
 [A,b]=InserimentoMatrice(N,scelta);
 fprintf('\n');
 disp('Il sistema di equazioni da risolvere è il seguente:'); 
